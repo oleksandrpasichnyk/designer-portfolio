@@ -1,0 +1,46 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.picture {
+  height: 40vh;
+  flex-grow: 1;
+  /* transition: ease-in 0.1s; */
+}
+
+.picture img{
+  padding: 15px;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.picture:last-child {
+  flex-grow: 2;
+}
+
+/* .picture:hover{
+  transform: scale(1.5);
+} */
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  .gallery {
+    flex-direction: row;
+  }
+
+  .picture {
+    height: auto;
+    width: 100%;
+  }
+
+  .picture img {
+    padding: 5px 0;
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}

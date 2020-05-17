@@ -3,7 +3,7 @@ html, body {
 }
 
 .header {
-    background-image: url("../img/IMG_0033.JPG"), linear-gradient(to bottom, rgba(0,0,0, .3), rgba(0,0,0, .6));
+    background-image: url("../img/preview.JPG"), linear-gradient(to bottom, rgba(0,0,0, .3), rgba(0,0,0, .6));
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center center;

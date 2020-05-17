@@ -47,40 +47,6 @@ section {
     color: #222;
 }
 
-@media screen and (max-width:768px) and (orientation: portrait) {
-
-
-    .slider .item {
-        max-height: 100vh;
-        justify-content: flex-end;
-        align-items: center;
-        width: 100%;
-    }
-
-    .slider .img-box {
-        width: 100%;
-    }
-
-    .slider .caption {
-        width: 80%;
-        flex-basis: 80%;
-        margin-left: 0;
-        margin-top: -50px;
-    }
-}
-
-@media screen and (max-width:640px) and (orientation: portrait) {
-
-    .slider .caption {
-        width: 100%;
-        flex-basis: 100%;
-        padding:0;
-        margin-left: 0;
-        margin-top: 20px;
-    }
-}
-
-
 @media screen and (max-width: 992px) {
     section {
         padding: 30px;
