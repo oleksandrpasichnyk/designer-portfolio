@@ -25,6 +25,7 @@ html, body {
     text-align: center;
     font-size: .8rem;
     position: relative;
+    margin-bottom: 50px;
 }
 
 .title .animated-border-container svg {
@@ -58,6 +59,10 @@ html, body {
 
 @media screen and (max-width:768px) and (orientation: portrait) {
     
+    .title {
+        margin-bottom: 10vh;
+    }
+
     .title .animated-border-container svg{
         width: 90vw;
         height: 20vw;
