@@ -12,8 +12,23 @@
 }
 
 .about video{
-    width: 40vw;
+    width: 100%;
     outline: none;
+}
+
+.video .animated-border-container svg {
+    width: 40vw;
+    height: 24vw;
+}
+
+.video .shape {
+    stroke-dasharray: 100% 65%;
+    stroke-dashoffset: 10%;
+}
+
+.video .to-animate{
+    height: 90%;
+    top: 10%;
 }
 
 .description{
@@ -43,6 +58,16 @@
     .about video{
         width: 100%;
         outline: none;
+    }
+
+    .video .animated-border-container svg {
+        width: 85vw;
+        height: 52vw;
+    }
+
+    .video .shape {
+        stroke-dasharray: 100% 80%;
+        stroke-dashoffset: 100%;
     }
 
     .description{

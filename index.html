@@ -21,7 +21,8 @@
   <link rel="stylesheet" href="css/pictures.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/slider.css">
-     <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/bodrers.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -55,8 +56,15 @@
 
   <section class="header">
     <div class="title">
-      <h1><span class="yellow">Привіт, </span> Я Катерина Вишневська</h1>
-      <p>дизайнер та художник</p>
+      <div class="animated-border-container">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <rect class="shape"/>
+        </svg>
+        <div class="to-animate">
+          <h1>Привіт, Я Катерина Вишневська</h1>
+          <p>дизайнер та художник</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -67,11 +75,21 @@
   <section class="about">
     <h1 class="section_title">Дизайн</h1>
     <div class="content">
+      
       <div class="video">
-        <video controls preload="auto">
-          <source src="video/kate.mp4" poster="/img/IMG_0033.JPG" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2">
-        </video>
+        <div class="animated-border-container">
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <rect class="shape"/>
+          </svg>
+          <div class="to-animate">
+            <video controls poster="/img/IMG_0033.JPG">
+              <source src="video/kate.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2">
+            </video>
+          </div>
+        </div>
       </div>
+      
+     
       <div class="description">
         <p>
           Навчаюсь у Львівській національній академії мистецтв, а також працюю у художній студії «montclair». <br>
@@ -90,7 +108,7 @@
       <div id="slider-01" class="slider">
         <div class="item">
           <div class="img-box pos-bottom">
-            <img src="img/bag.jpg" alt="">
+            <img src="img/1-01.jpg" alt="">
           </div>
           <div class="caption">
             <h3>Slide 1</h3>
@@ -100,7 +118,7 @@
         </div>
         <div class="item">
           <div class="img-box pos-left">
-            <img src="img/cap.jpg" alt="">
+            <img src="img/1-02.jpg" alt="">
           </div>
           <div class="caption">
             <h3>Slide 2</h3>
@@ -110,20 +128,10 @@
         </div>
         <div class="item">
           <div class="img-box">
-            <img src="img/FoodBox.jpg" alt="">
+            <img src="img/1-03.jpg" alt="">
           </div>
           <div class="caption">
             <h3>Slide 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illum fugit quis labore dolore&nbsp;vitae.
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="img-box">
-            <img src="img/Notebook.jpg" alt="">
-          </div>
-          <div class="caption">
-            <h3>Slide 4</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex illum fugit quis labore dolore&nbsp;vitae.
             </p>
           </div>

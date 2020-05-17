@@ -1,0 +1,31 @@
+.animated-border-container {
+  position: relative;
+}
+
+.shape{
+  width: 100%;
+  height: 100%;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #fc0;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.to-animate{
+  position: absolute;
+  width: 90%;
+  height: 60%;
+  top: 25%;
+  left: 5%;
+}
+
+.animated-border-container:hover .shape {
+  stroke-dasharray: 170%;
+  stroke-dashoffset: -300%;
+}
+
+/*.animated-border-container:hover .shape {
+        stroke-dasharray: 170%;
+        stroke-dashoffset: -300%;
+    }*/
