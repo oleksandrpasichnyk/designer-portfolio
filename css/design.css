@@ -1,0 +1,29 @@
+.carousels{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+
+.carousel{
+  width: 25%;
+  border: 4px solid #fc0;
+  overflow: hidden;
+}
+
+.carousel h5, p, span{
+  color: #222;
+}
+
+.carousel-control-next-icon{
+  background-image: url("/img/navigate_next-black-48dp.svg");
+}
+
+.carousel-caption{
+  margin-bottom: 0;
+}
+
+.carousel-indicators li{
+  border-top: 10px solid #222;
+  border-bottom: 10px solid #222;
+}

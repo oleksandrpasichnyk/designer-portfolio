@@ -1,0 +1,23 @@
+#contact {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+h3{
+	padding: 15px 0; 
+}
+
+p{
+	padding: 5px 0;
+}
+
+.follow img{
+	width: 40px;
+	margin: 10px;
+}
+
+.follow a{
+	outline: none;
+}

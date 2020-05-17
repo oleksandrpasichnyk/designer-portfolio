@@ -1,0 +1,170 @@
+nav {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 9995;
+}
+
+nav.topfixed {
+/*    background-color: #fff;*/
+    margin-top: 60px;
+    width: 15%;
+}
+
+nav.topfixed .navbar {
+/*    background-color: #fff;*/
+background-color: rgba(22,22,22,.5);
+color: #fff;
+    justify-content: start;
+    padding: 15px;
+}
+
+
+nav.topfixed .nav-icon span {
+/*    background: #333;*/
+}
+
+nav.topfixed .nav-icon.open span {
+    background: #fff;
+}
+
+nav.topfixed .navigation ul{
+    margin-left: 10px;
+    flex-direction: column;          /*delete*/
+}
+
+nav.topfixed .navigation li a{
+    color: #fff;
+    padding: 10px ;
+    font-size: 1em;
+    opacity: 1;
+}
+
+nav a {
+    display: block;
+    cursor: pointer;
+}
+
+nav .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 auto;
+    padding: 10px 60px;
+    background: rgba(255,255,255,.3);
+}
+
+.navigation{
+    width: 40%;
+    min-width: 800px;
+    max-width: 1200px;
+}
+
+.navigation ul {
+    justify-content: space-between;
+    display: flex;
+    font-size: 0.9em;
+    letter-spacing: .05em;
+    list-style: none;
+    margin: 0;
+}
+
+.navigation li a {
+    color: #222;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: ease-in 0.2s;
+}
+
+.navigation li a:hover {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+
+.navigation button {
+    background: none;
+    border: none;
+    outline: none;
+    display: none; 
+}
+
+.navigation.topfixed {
+    display: block; 
+}
+
+@media screen and (max-width: 992px) {
+    
+    nav.topfixed {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    nav .navbar {
+        align-items: center;
+        visibility: hidden;
+    }
+    
+    nav.topfixed .navbar {
+        align-items: center;
+        visibility: visible;
+    }
+
+    nav.topfixed .navigation ul{
+        margin-left: 0;
+        flex-direction: column;          /*delete*/
+    }
+
+    nav.topfixed .navigation li a {
+        color: #fff;
+        margin-left: 0;
+
+    }
+
+    .navigation button {
+        position: relative;
+        display: block;
+        margin: 0;
+        z-index: 9999;
+    }
+    
+    .navigation ul {
+        background-color: rgba(10,10,10,.8);
+        position: absolute;
+        padding: 100px 30px 30px 20px;
+        flex-direction: column;
+        left: 0;
+        top: 0;
+        min-width: 50%;
+        min-height: 100vh;
+        transform: translateX(100%);
+        transition: all 0.5s;
+        opacity:0;
+        transition-property: transform;
+        transition-duration: .35s;
+/*        transition-delay: .2s;*/
+        transition-timing-function: ease;
+        z-index: 9998;        
+        margin-left: 0;
+    }
+    
+    .navigation.open ul {
+        transform: translateX(0);
+        opacity:1;
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+    
+    .navigation.open .overlay {
+        background-color: rgba(10,10,10, .3);
+        display: block;
+        position: absolute;
+        right:0;
+        top:0;
+        width:100%;
+        min-height: 100vh;
+        z-index: 9997;
+    }
+}

@@ -1,0 +1,58 @@
+html, body {
+    font-size: 16px;
+}
+
+.header {
+    background-image: url("../img/IMG_0033.JPG"), linear-gradient(to bottom, rgba(0,0,0, .3), rgba(0,0,0, .6));
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #fff;
+    padding: 25px;
+/*    overflow: hidden;*/
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.title {
+/*    height: 100%;*/
+    box-sizing: content-box;
+    border: 4px solid #fc0;
+    border-right: none;
+    border-bottom: none; 
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    margin-bottom: .5em;
+    font-size: .8rem;
+}
+
+.title:after {
+    width: 50%;
+    margin: 20px 0 0 -20px;
+    display:block;/* probably not really needed? */
+    content: "";
+    border-bottom: 4px solid #fc0;
+}
+
+
+.header h1 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.header p {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
