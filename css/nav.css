@@ -60,6 +60,7 @@ nav .navbar {
     width: 40%;
     min-width: 800px;
     max-width: 1200px;
+    overflow: hidden;
 }
 
 .navigation ul {
@@ -91,8 +92,9 @@ nav .navbar {
     display: none; 
 }
 
-.navigation.topfixed {
+.topfixed .navigation {
     display: block; 
+    min-width: 10vw;
 }
 
 @media screen and (max-width: 992px) {
