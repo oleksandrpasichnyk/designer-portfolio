@@ -69,8 +69,8 @@
 }
 
 .slogan .shape {
-	stroke-dasharray: 100% 65%;
-	stroke-dashoffset: 10%;
+	stroke-dasharray: 100%;
+	stroke-dashoffset: 50%;
 }
 
 .slogan .to-animate{
@@ -126,8 +126,8 @@
 	}
 	
 	.slogan .shape {
-		stroke-dasharray: 100% 70%;
-		stroke-dashoffset: 10%;
+		stroke-dasharray: 100%;
+		stroke-dashoffset: 50%;
 	}
 	
 	.slogan .to-animate{

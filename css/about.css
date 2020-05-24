@@ -22,8 +22,8 @@
 }
 
 .video .shape {
-    stroke-dasharray: 100% 65%;
-    stroke-dashoffset: 10%;
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 50%;
 }
 
 .video .to-animate{
@@ -66,8 +66,8 @@
     }
 
     .video .shape {
-        stroke-dasharray: 100% 80%;
-        stroke-dashoffset: 100%;
+        stroke-dasharray: 100%;
+		stroke-dashoffset: 50%;
     }
 
     .description{
@@ -77,11 +77,16 @@
 
     .description p{
         margin-top: 0;
-        font-size: 4vw;
         text-align: justify;
     }
 
     .about .section_title{
         color: #fff;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .description p{
+        font-size: 4vw;
     }
 }
