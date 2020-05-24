@@ -71,6 +71,7 @@
 }
 
 #slider-01 .slick-arrow {
+    display: none;
     border-radius: 50%;
     border-color: transparent;
     outline: none;
@@ -173,7 +174,7 @@
 }
 
 #slider-01 .slick-dots li.slick-active button {
-    background-color: red;
+    background-color: #fc0;
 }
 
 #slider-01 .item {
