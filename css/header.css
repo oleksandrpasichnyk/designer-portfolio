@@ -34,9 +34,21 @@ html, body {
 }
 
 .title .shape {
-    stroke-dasharray: 100% 65%;
-    stroke-dashoffset: 10%;
+    stroke-dasharray: 170%;
+    stroke-dashoffset: -300%;
+    animation: border-animation-header 2s 1;
 }
+
+@keyframes border-animation-header {
+    0% {
+        stroke-dasharray: 100% 65%;
+        stroke-dashoffset: 10%;
+    }
+    100% {
+        stroke-dasharray: 170%;
+        stroke-dashoffset: -300%;
+    }
+  }
 
 .header h1 {
     margin: 0;

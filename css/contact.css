@@ -69,8 +69,9 @@
 }
 
 .slogan .shape {
-	stroke-dasharray: 100%;
-	stroke-dashoffset: 50%;
+	stroke-dasharray: 170%;
+	stroke-dashoffset: -300%;
+	animation: border-animation 2s 1;
 }
 
 .slogan .to-animate{

@@ -33,6 +33,7 @@ section.design {
 
 .slider .img-box {
   width: 50%;
+  margin-left: 150px;
 }
 
 .slider .caption {
@@ -92,6 +93,7 @@ section.design {
 
   .slider .img-box {
       width: 100%;
+      margin: 0;
   }
 
   .slider .caption {
